@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.example.blogapp";
+option java_multiple_files = true;
+
+message AuthorStore {
+    string user_name = 2;
+}

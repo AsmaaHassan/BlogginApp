@@ -1,0 +1,33 @@
+pluginManagement {
+
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+//        maven {
+//            url 'http://dl.bintray.com/kotlin/kotlin-eap'
+//            content {
+//                includeGroup "org.kodein"
+//            }
+//        }
+        maven {url "https://jitpack.io"}
+        maven { url "https://dl.bintray.com/kodein-framework/Kodein-DI" }
+    }
+    plugins {
+        id 'com.android.application' version '7.1.0-alpha13'
+        id 'com.android.library' version '7.1.0-alpha13'
+        id 'org.jetbrains.kotlin.android' version '1.5.21'
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "BlogApp"
+include ':app'
+//enableFeaturePreview("GRADLE_METADATA")
+
